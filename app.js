@@ -42,6 +42,7 @@ function isInteger(input) {
     return Number.isInteger(input);
 }
 
-app.listen(3000, ()=>{
-    console.log('connect to 3000');
+const port = process.env.PORT || 3000
+app.listen(port, ()=>{
+    console.log(`Connecting to...${port}`);
 })
